@@ -5,6 +5,7 @@
 const determinadorNumeroPrimo = numero =>
 {
     if(typeof numero !== "number") return 'Debes ingresar un numero';
+    if(numero === 0 || numero === 1) return 'El numero no es primo';
     for(let i = 2; i < numero; i++)
     {
         if(numero % i === 0) return "El numero no es primo";
