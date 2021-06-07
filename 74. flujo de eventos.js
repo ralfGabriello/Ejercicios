@@ -1,12 +1,12 @@
 
 const saludo1 = function(evento)
 {
-    if(evento.target.classList[3] !== "uno") return;
+    if(evento.target.classList[3] !== "uno") return; //Para evitar la captura
     console.log(`Funcion 1 Hola te saluda ${this.classList[3]}, el click lo origino ${evento.target.classList[3]}`);
 }
 const saludo2 = function(evento)
 {
-    if(evento.target.classList[3] !== "dos") return;
+    if(evento.target.classList[3] !== "dos") return; //Para evitar la captura
     console.log(`Funcion 2 Hola te saluda ${this.classList[3]}, el click lo origino ${evento.target.classList[3]}`);
 }
 const saludo3 = function(evento)
