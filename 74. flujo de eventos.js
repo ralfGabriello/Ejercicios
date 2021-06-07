@@ -16,24 +16,6 @@ const saludo3 = function(evento)
 
 const contenedorDivs = document.querySelector(".row").querySelectorAll("div");
 
-//Este tipo de situaciones suceden cuando, un elemento abuelo, un elemento padre y un elemento hijo (obvio no solo
-//en este caso especifico) tienen el mismo evento, y si se activa el evento del elemento mas interno, se activan
-//todos los eventos de los elementos mas externos.
-
-/*
-contenedorDivs.forEach(div => 
-{
-    //div.addEventListener("click", saludo, false); //Se realiza la captura desde el interior hacia el exterior
-    //div.addEventListener("click", saludo, true); //Se realiza la captura desde el exterior hacia el interior
-    div.addEventListener("click", saludo, 
-    {
-        capture: false, //Esta es la captura
-        //once: false //Esto es para determinar si deseas que se realize el evento y toda la captura solo n veces.
-        //once: true //Esto es para determinar si deseas que se realize el evento y toda la captura solo 1 vez.
-    });
-})
-*/
-
 //Aunque sean funciones diferentes la captura se sigue realizando.
 //Sin embargo la captura se realiza unicamente del interior al exterior.
 contenedorDivs[0].addEventListener("click", saludo1);
