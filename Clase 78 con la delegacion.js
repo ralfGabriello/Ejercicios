@@ -1,4 +1,3 @@
-
 const $buttonAbrirVentanta = document.getElementById("buttonAbrirVentana"),
 $buttonCerrarVentana = document.getElementById("buttonCerrarVentana"),
 $buttonImprimirVentana = document.getElementById("buttonImprimirVentana");
