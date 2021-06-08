@@ -5,13 +5,13 @@ let ventana = null;
 
 window.addEventListener("click", evento =>
 {
-    if(evento.target == $buttonAbrirVentanta)
+    if(evento.target === $buttonAbrirVentanta)
     {
         //Todo lo que "cuelga" de window, se puede escribir sin necesidad del window
         ventana = window.open("https://google.com"); 
     }
 
-    if(evento.target == $buttonCerrarVentana)
+    if(evento.target === $buttonCerrarVentana)
     {
         //window.close(); Cierra la ventanta en la cual te encuentras.
 
@@ -20,7 +20,7 @@ window.addEventListener("click", evento =>
         ventana.close(); 
     }
 
-    if(evento.target == $buttonImprimirVentana)
+    if(evento.target === $buttonImprimirVentana)
     {
         window.print(); //Imprime la ventana en la cual te encuentras.
     }
