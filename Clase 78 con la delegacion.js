@@ -9,7 +9,6 @@ window.addEventListener("click", evento =>
     {
         //Todo lo que "cuelga" de window, se puede escribir sin necesidad del window
         ventana = window.open("https://google.com"); 
-        console.log(ventana);
     }
 
     if(evento.target == $buttonCerrarVentana)
