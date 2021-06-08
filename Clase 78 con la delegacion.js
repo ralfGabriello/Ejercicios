@@ -27,3 +27,4 @@ window.addEventListener("click", evento =>
         window.print(); //Imprime la ventana en la cual te encuentras.
     }
 })
+
